@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.table-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 50px;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: magenta;
+}
+
+.cell {
+    border: 1px solid #fff;
+    color: #fff;
+    position: relative;
+    height: calc((100vh - 200px - 100px) / 4);
+}
+
+.tooltip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 4px;
+    visibility: hidden;
+    pointer-events: none;
+    font-size: 0.75rem;
+}
+
+.cell:hover .tooltip {
+    visibility: visible;
+}

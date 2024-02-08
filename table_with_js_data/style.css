@@ -1,0 +1,27 @@
+.exchange-rate-table {
+    margin: 20px;
+    padding: 10px;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 600px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
